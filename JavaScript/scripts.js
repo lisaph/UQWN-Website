@@ -1,7 +1,16 @@
+var faded = false;
+
 $("nav div").click(function() {
-    $("ul").slideToggle();
-    $("ul ul").removeAttr('style');
-    $("ul ul ul").removeAttr('style');
+   if (faded) {
+      $("ul").fadeOut("slow", function() {
+         faded = false;
+      });
+   } else {
+      $("ul").fadeIn("slow", function() {
+         faded = true;
+      });
+   }
+
  });
 
 $(".tabs").click(function() {
@@ -11,25 +20,7 @@ $(".tabs").click(function() {
       $items.removeClass("clicked");
    }
    $(this).toggleClass('clicked');
-   var targetEle = this.hash;
-   var $targetEle = $(targetEle);
 
-
-
-   $('html, body').stop().animate({
-      'scrollTop': $targetEle.offset().top - 80
-   }, 800, 'swing', function () {
-      window.location.hash = targetEle;
-   });
-   
-
-   if (this.hash == "#home") {
-      $('html, body').stop().animate({
-         'scrollTop': 0
-      }, 800, 'swing', function () {
-         window.location.hash = targetEle;
-      });
-   }
 });
 
 
