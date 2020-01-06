@@ -17,6 +17,16 @@ body {
     z-index: -1;
 }
 
+.background_about {
+	background: url("Images/aboutus.png") no-repeat center top;
+	background-color: white;
+	background-size: cover;
+	position: fixed;
+	width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .drop_box {
 	display: table;
 }
@@ -88,10 +98,10 @@ body {
 
 .content {
 	display: none;
-	margin-top: 210px;
+	margin-top: 110px;
 	padding: 1%;
 	text-align: center;
-	background-color: rgb(255, 255, 255, 0.9);
+	background-color: rgb(249, 215, 225, 0.7);
 	/* opacity: 0.8; */
 	/* font-size: 22px; */
 	/* border-top: 4px solid #eb5c76;
@@ -105,11 +115,9 @@ body {
 	margin: 65px 0px 0px 0px;
 	line-height: 1.45em;
 	text-align: center;
-	background: white;
-	border-bottom: 4px solid #eb5c76;
-	border-top: 4px solid #eb5c76;
-	color: #42526c;
-	font-size: 38px;
+	background: transparent;
+	color: #44546A;
+	font-size: 22px;
 }
 
 .image_content {
@@ -121,8 +129,8 @@ body {
 }
 
 .clickable_content {
-	background-color: #eb5c7678;
-	margin: 30px;
+	background-color: #F9D7E1;
+	margin: 10%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -130,8 +138,7 @@ body {
 }
 
 .clickable {
-	background-color: #eb5c7678;
-	box-shadow: 0 5px 0 #eca3b1;
+	background-color: #F9D7E1;
 	color: white;
 	padding: 0.2em 1.2em;
 	text-decoration: none;
@@ -139,7 +146,7 @@ body {
 }
 
 .clickable:hover {
-	background-color: #f9d2d9;
+	background-color: #44546A;
 	cursor: pointer;
 }
 
@@ -170,6 +177,37 @@ body {
 	padding: 2.5%;
 }
 
+.contact_head {
+	position: relative;
+	margin-top: 110px;
+	width: 60%;
+	padding: 10% 20%;
+	background-color: #f9d7e1;
+	color: #44546A;
+	text-align: left;
+}
+
+.contact_head div {
+	padding: 10px 0px;
+}
+
+.contact_head a {
+	font-size: 25px;
+	color: white;
+	padding: 20px 0px;
+}
+
+.contact_label {
+	position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding: 3%;
+    background: transparent;
+}
+
 .about_head {
 	position: relative;
 	margin-top: 110px;
@@ -191,6 +229,11 @@ body {
     background: transparent;
 }
 
+.about_head h2 {
+	font-weight: normal;
+	font-size: 38px;
+}
+
 .about_head h1 {
 	letter-spacing: 1.5mm;
 	font-weight: normal;
@@ -205,7 +248,34 @@ body {
 	width: 70%;
 	background-color: #44546A;
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
+}
+
+.team {
+	background-color: white;
+	width: 80%;
+}
+
+.team_title {
+	font-size: 30px;
+	color: #44546A;
+	text-align: left;
+}
+
+.team_line {
+	padding: 0px 3%;
+	margin-bottom: 6px;
+	height: 1mm;
+	width: 94%;
+	background-color: #F9D7E1;
+}
+
+.team_text {
+	color: black;
+	text-align: left;
+	margin: 20px 1%;
+	text-align: left;
+	width: 98%;
 }
 
 .quote {
@@ -223,6 +293,12 @@ body {
 	width: 30%;
 }
 
+.team_message {
+	margin: 1%;
+	text-align: left;
+	width: 31%;
+}
+
 .about_image {
 	width: 25%;
 	padding-top: 2.5%;
@@ -231,6 +307,18 @@ body {
 .about_title {
 	font-size: 30px;
 	padding-bottom: 10px;
+}
+
+.question {
+	font-size: 30px;
+	text-align: left;
+}
+
+.answer {
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+	text-align: right;
 }
 
 .line {
@@ -282,7 +370,7 @@ ul li {
 	display: inline-block;
 }
 
-ul li a{
+ul li a {
 	text-transform: none;
 	color: white;
 	text-decoration: none;
@@ -290,32 +378,47 @@ ul li a{
 	padding: 44px 16px;
 }
 
+.extra_nav {
+	padding: 13px 13px 13px 1px;
+}
+
+.list {
+	display: block;
+	background-color: white;
+	padding: 10px;
+}
+
+.list_item {
+	background-color: white;
+	color: black;
+}
+
 ul li a:hover{
 	color: #F9D7E1;
 }
+
 ul ul {
 	display: none;
 	position: absolute;
-	min-width: 200px;
 	background: lightgrey;
 }
 
-ul ul li{
+ul ul li {
 	display: block;
 	position: relative;
 	top: 100%;
-	background: #eb5c76;
+	background: #44546A;
 }
 
-ul li:hover > ul{
+ul li:hover > ul {
 	display: block;
 }
 
-.drop li:hover > ul{
+.drop li:hover > ul {
 	display: block;
 }
 
-ul li i{
+ul li i {
 	color: #1e242e;
 	float: right;
 	padding-left: 10px;
@@ -358,8 +461,8 @@ nav div{
 
 
 @media(max-width: 830px) {
-	.about_head {
-		margin-top: 66px;
+	.about_head,.content {
+		margin-top: 29.6px;
 	}
 	.nav_logo {
 		display: none;
@@ -390,22 +493,11 @@ nav div{
 		background: white;
     }
 
-    ul li:hover > ul {
-        display: block;
-        position: absolute;
-        left: 100%;
-        top: 40%;
-    }
-
     .drop li:hover > ul {
         display: block;
         position: absolute;
         left: 0%;
         top: 0%;
-    }
-
-	ul ul li {
-       	display: block;
     }
 
     ul ul ul {
