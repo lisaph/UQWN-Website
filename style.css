@@ -2,8 +2,8 @@ html {
 }
 
 body {
-	font-family: Abadi MT Std, sans-serif;
-	font-size: 16px;
+	font-family: 'Abadi MT Std Extra Light', 'Abadi MT Std', sans-serif;
+	font-size: 22px;
 	color: rgb(33, 45, 63);
 }
 
@@ -109,6 +109,17 @@ body {
 	width: 80%;
 }
 
+.title_text {
+	width: 60%;
+	padding: 3px;
+	margin: 65px 0px 0px 0px;
+	line-height: 1.45em;
+	text-align: center;
+	background: transparent;
+	color: #44546A;
+	font-size: 48px;
+}
+
 .bottom_text {
 	width: 60%;
 	padding: 3px;
@@ -117,7 +128,6 @@ body {
 	text-align: center;
 	background: transparent;
 	color: #44546A;
-	font-size: 22px;
 }
 
 .image_content {
@@ -130,11 +140,10 @@ body {
 
 .clickable_content {
 	background-color: #F9D7E1;
-	margin: 10%;
+	margin-top: 40%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 18px;
 }
 
 .clickable {
@@ -192,7 +201,6 @@ body {
 }
 
 .contact_head a {
-	font-size: 25px;
 	color: white;
 	padding: 20px 0px;
 }
@@ -215,7 +223,6 @@ body {
 	padding: 10% 20%;
 	background-color: #F9D7E1;
 	color: #44546A;
-	text-align: center;
 }
 
 .about_label {
@@ -243,7 +250,6 @@ body {
 
 .about {
 	padding: 5% 15%;
-	font-size: 18px;
 	text-align: center;
 	width: 70%;
 	background-color: #44546A;
@@ -317,8 +323,7 @@ body {
 .answer {
 	padding: 20px;
 	color: white;
-	font-size: 20px;
-	text-align: right;
+	text-align: justify;
 }
 
 .line {
@@ -376,6 +381,7 @@ ul li a {
 	text-decoration: none;
 	display: block;
 	padding: 44px 16px;
+	font-size: 18px;
 }
 
 .extra_nav {
@@ -435,7 +441,6 @@ ul ul ul{
 nav div{
 	background: #44546A;
 	color: #1e242e;
-	font-size: 24px;
 	cursor: pointer;
 	display: none;
 	border: 1px solid transparent;
@@ -457,6 +462,18 @@ nav div{
 		padding-right: 2%;
 		width: 96%;
 	}
+
+	.team_message {
+		width: 98%;
+	}
+
+	.about_message {
+		width: 100%;
+	}
+
+	.about_label {
+		position: relative;
+	}
 }
 
 
@@ -465,7 +482,7 @@ nav div{
 		margin-top: 29.6px;
 	}
 	.nav_logo {
-		display: none;
+		height: 35px;
 	}
 
 	.nav_wrapper {
@@ -479,26 +496,36 @@ nav div{
 	ul {
 		display: none;
         position: absolute;
-        width: 150px;
-		background: #ffffffa8;
+		width: 150px;
     }
     
 	ul li {
 		display: block;
-    }
+	}
+
+	ul li a {
+		padding: 5px
+	}
     
 	ul ul {
 		display: none;
-		position: static;
-		background: white;
-    }
+		position: relative;
+	}
+
+	.extra_nav {
+		padding: 4px;
+	}
 
     .drop li:hover > ul {
         display: block;
         position: absolute;
         left: 0%;
         top: 0%;
-    }
+	}
+
+	.clicked {
+		color: white;
+	}
 
     ul ul ul {
        	position: static;
