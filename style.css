@@ -3,7 +3,7 @@ html {
 
 body {
 	font-family: 'Abadi MT Std Extra Light', 'Abadi MT Std', sans-serif;
-	font-size: 22px;
+	font-size: 18px;
 	color: rgb(33, 45, 63);
 }
 
@@ -123,6 +123,7 @@ body {
 .bottom_text {
 	width: 60%;
 	padding: 3px;
+	padding-bottom: 200px;
 	margin: 65px 0px 0px 0px;
 	line-height: 1.45em;
 	text-align: center;
@@ -138,24 +139,29 @@ body {
 	width: 100%;
 }
 
+.click_me {
+	margin-top: 525px;
+	width: 100%;
+}
+
 .clickable_content {
-	background-color: #F9D7E1;
-	margin-top: 40%;
+	background-color: rgb(255, 255, 255, 0.5);
+	margin: 5px;
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .clickable {
-	background-color: #F9D7E1;
-	color: white;
+	color:#44546A;
 	padding: 0.2em 1.2em;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
 .clickable:hover {
-	background-color: #44546A;
+	color: #F9D7E1;
 	cursor: pointer;
 }
 
@@ -190,7 +196,9 @@ body {
 	position: relative;
 	margin-top: 110px;
 	width: 60%;
+	height: 300px;
 	padding: 10% 20%;
+	padding-bottom: 205px;
 	background-color: #f9d7e1;
 	color: #44546A;
 	text-align: left;
@@ -335,13 +343,15 @@ body {
 }
 
 .contact {
-	bottom: 0;
-    padding: 20px 1% 10px 1%;
+	position: fixed;
+    bottom: 0;
+    padding: 10px 1%;
     width: 98%;
-    background-color: white;
+    color: white;
     margin: 0;
     display: flex;
-    flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	font-size: 12px;
 }
 
 .left {
@@ -350,7 +360,7 @@ body {
 }
 
 .center {
-	width: 33%;
+	width: 100%;
 	text-align: center;
 }
 

@@ -10,17 +10,16 @@ $("nav div").click(function() {
          faded = true;
       });
    }
-
- });
+});
 
 $(".tabs").click(function() {
-   
    var $items = $(".tabs");
+
    for (var i = 0; i < $items.length; i++) {
       $items.removeClass("clicked");
    }
-   $(this).toggleClass('clicked');
 
+   $(this).toggleClass('clicked');
 });
 
 
