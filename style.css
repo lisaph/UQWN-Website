@@ -140,7 +140,7 @@ body {
 }
 
 .click_me {
-	margin-top: 525px;
+	margin-top: 575px;
 	width: 100%;
 }
 
@@ -227,6 +227,7 @@ body {
 .about_head {
 	position: relative;
 	margin-top: 110px;
+	text-align: center;
 	width: 60%;
 	padding: 10% 20%;
 	background-color: #F9D7E1;
@@ -355,17 +356,17 @@ body {
 }
 
 .left {
-	width: 33%;
+	width: 0%;
 	text-align: left;
 }
 
 .center {
 	width: 100%;
-	text-align: center;
+	text-align: right;
 }
 
 .right {
-	width: 33%;
+	width: 0%;
 	text-align: right;
 }
 
@@ -457,6 +458,9 @@ nav div{
 }
 
 @media(max-width: 1080px) {
+	.background {
+		background-image: url("Images/background.png");
+	}
 	.nav_wrapper {
 		width: 96%;
 	}
