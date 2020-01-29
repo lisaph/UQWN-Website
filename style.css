@@ -1,8 +1,13 @@
 html {
 }
 
+@font-face {
+	font-family: Abadi-Light;
+	src: url('fonts/abadi/ufonts.com_abadimtstd-light-opentype.woff'); 
+}
+ 
 body {
-	font-family: 'Abadi MT Std Extra Light', 'Abadi MT Std', sans-serif;
+	font-family: Abadi-Light, sans-serif;
 	font-size: 18px;
 	color: rgb(33, 45, 63);
 }
