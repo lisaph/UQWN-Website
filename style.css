@@ -229,6 +229,49 @@ body {
     background: transparent;
 }
 
+.about_top {
+	margin-top: 110px;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	background-color: #F9D7E1;
+	font-size: 22px;
+}
+
+.left_box {
+	margin-left: 100px;
+	padding: 8% 5%; 
+	text-align: center;
+	width: 30%;
+	background-color: white;
+	color: #44546A;
+}
+
+.left_title {
+	text-align: left;
+	font-size: 26px;
+	padding: 40px 20px;
+}
+
+.left_content {
+	padding-top: 40px 20px; 
+	text-align: center;
+}
+
+.join_us {
+	width: 90%;
+	padding: 5%;
+	background-color: #F9D7E1;
+	text-align: center;
+}
+
+.join_image {
+	text-align: center;
+}
+
+.join_content {
+}
+
 .about_head {
 	position: relative;
 	margin-top: 110px;
@@ -266,7 +309,7 @@ body {
 	padding: 5% 15%;
 	text-align: center;
 	width: 70%;
-	background-color: #44546A;
+	background-color: rgb(68, 84, 106);
 	display: flex;
 	flex-wrap: wrap;
 }
